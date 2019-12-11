@@ -1,15 +1,15 @@
 ENTITY PARSER READ ME.
 
 
-Can modify value which need to execute process from outside using com.parser.util.vo.ParserVO
+Can modify value which need to execute process from outside using ParserVO
 
 
 
 CSV ENTITY PARSER.
 Entity should be type of om.parser.csv.operations.CSVSupportable
 
-Its need to create com.parser.csv.operations.CsvOperator for start process.
-Can create CsvOperator by annotate entity class by com.parser.util.annotate.ParserVOA or creating new CSVVo instance.
+Its need to create CsvOperator for start process.
+Can create CsvOperator by annotate entity class by ParserVOA or creating new CSVVo instance.
 default properties can override through annotation or csv vo instance.
 
 Ex :
@@ -30,7 +30,7 @@ csv.CsvParserTest#config
 NOTE :
 ENUM:
     if column value contain exact enum name then process will pick enum by name.
-    if not need to implement com.parser.util.annotate.ParserValueResolver
+    if not need to implement ParserValueResolver
     Ex :
     csv.DifferentEnum
 
